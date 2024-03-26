@@ -1,0 +1,138 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Rubik+Scribble&display=swap");
+/* Default styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 22, 1) 0%,
+    rgba(66, 23, 66, 0.8995798148360907) 26%,
+    rgba(48, 92, 70, 1) 100%
+  );
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.your-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 75px;
+}
+
+.your-choice img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.your-choice p {
+  font-size: 24px;
+  color: white;
+}
+/* Game board styles */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* By default, show 6 columns */
+  gap: 5px; /* Adjust the default gap value */
+}
+
+.youtuber-card {
+  position: relative; /* Position relative for absolute positioning of overlay */
+  cursor: pointer;
+}
+
+.youtuber-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay img {
+  width: 66%; /* Adjust the size of the cross image as needed */
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  margin-top: 10px;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.howtoplay {
+  max-width: 400px;
+  max-height: 785px;
+  margin-left: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+.howtoplay h2 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.howtoplay .text {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: rgb(228, 224, 224);
+  font-size: 22px;
+}
